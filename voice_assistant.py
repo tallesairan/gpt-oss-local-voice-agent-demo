@@ -11,7 +11,7 @@ from TTS.api import TTS
 ########################
 SAMPLERATE     = 16_000        # Hz
 RECORD_SECS    = 4             # Länge einer Aufnahme
-LLM_MODEL      = "gpt-oss:20b" # oder kleiner, z. B. gpt-oss:7b
+LLM_MODEL      = "gpt-oss:20b" # GPT-OSS Modell
 WHISPER_MODEL  = "tiny"        # tiny / base / small / medium …
 XTTS_MODEL     = "tts_models/multilingual/multi-dataset/xtts_v2"
 XTTS_LANGUAGE  = "de"
