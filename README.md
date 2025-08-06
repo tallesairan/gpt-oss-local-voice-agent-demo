@@ -5,6 +5,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Node.js 16+](https://img.shields.io/badge/node-16+-green.svg)](https://nodejs.org/)
+[![YouTube](https://img.shields.io/badge/YouTube-@everlastai-red?logo=youtube)](https://www.youtube.com/@everlastai)
+
+**📺 [Watch the tutorial](https://www.youtube.com/@everlastai) • 💬 [Get free consultation](https://kiberatung.de) • 📞 [AI phone solutions](https://kitelefonagent.de)**
 
 **Live Demo Features:** Chat Interface • Voice Mode • Real-time Processing • Modern UI • Completely Local
 
@@ -95,6 +98,14 @@ This is a **demo project** - feel free to:
 - 💡 **Suggest features** in discussions
 - 🔧 **Submit pull requests** for improvements
 
+### Professional AI Solutions
+
+Need help implementing AI in your business? 
+
+- 📺 **Learn**: [YouTube @everlastai](https://www.youtube.com/@everlastai) 
+- 💬 **Consult**: [Free consultation](https://kiberatung.de)
+- 📞 **Deploy**: [AI phone assistants](https://kitelefonagent.de)
+
 ### Quick Ideas
 - 🌍 Add more languages
 - 🎨 Improve UI/UX
@@ -104,6 +115,23 @@ This is a **demo project** - feel free to:
 ## 📝 License
 
 MIT License - see [LICENSE](LICENSE) file
+
+## 👥 About
+
+Created by **EverLast Consulting** - Specialists in AI solutions and automation.
+
+**Resources:**
+- 🎥 [YouTube Channel](https://www.youtube.com/@everlastai) - AI development tutorials
+- 💡 [Free AI Consultation](https://kiberatung.de) 
+- 📞 [AI Phone Assistant Solutions](https://kitelefonagent.de)
+
+## 🎥 Learn More
+
+This project was created as part of our AI development series. Check out:
+
+- 📺 **YouTube Channel**: [EverLast AI](https://www.youtube.com/@everlastai) - AI tutorials and demos
+- 💬 **Free Consultation**: [kiberatung.de](https://kiberatung.de) - Get expert AI advice
+- 📞 **AI Phone Assistants**: [kitelefonagent.de](https://kitelefonagent.de) - Professional AI phone solutions
 
 ## 🙏 Acknowledgments
 
