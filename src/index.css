@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-sans;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    @apply text-gray-900 bg-gray-50;
+  }
+  
+  html, body, #root {
+    @apply h-full;
+  }
+}
+
+@layer components {
+  .chat-message {
+    @apply mb-4 p-4 rounded-xl max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl;
+  }
+  
+  .user-message {
+    @apply bg-primary-500 text-white ml-auto rounded-br-md;
+  }
+  
+  .assistant-message {
+    @apply bg-white text-gray-800 mr-auto rounded-bl-md shadow-sm border border-gray-200;
+  }
+  
+  .voice-button {
+    @apply w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg;
+  }
+  
+  .voice-button-active {
+    @apply bg-red-500 text-white animate-pulse-glow;
+  }
+  
+  .voice-button-inactive {
+    @apply bg-primary-500 text-white hover:bg-primary-600;
+  }
+  
+  .voice-wave {
+    @apply w-1 bg-primary-400 rounded-full mx-0.5 animate-voice-wave;
+  }
+  
+  .typing-indicator {
+    @apply flex space-x-1 p-3;
+  }
+  
+  .typing-dot {
+    @apply w-2 h-2 bg-gray-400 rounded-full animate-typing;
+  }
+}

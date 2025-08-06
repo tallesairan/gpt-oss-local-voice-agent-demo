@@ -1,0 +1,18 @@
+# Voice Assistant Backend Dependencies
+flask>=2.3.0
+flask-cors>=4.0.0
+sounddevice>=0.4.6
+numpy>=1.24.0
+scipy>=1.11.0
+openai-whisper>=20231117
+ollama>=0.1.7
+TTS>=0.16.6
+python-dotenv>=1.0.0
+
+# Additional dependencies for audio processing
+librosa>=0.10.0
+pyaudio==0.2.11
+
+# For better error handling and logging
+werkzeug>=2.3.0
+gunicorn>=21.0.0
