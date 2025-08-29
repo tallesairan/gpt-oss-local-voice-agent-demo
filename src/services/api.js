@@ -81,7 +81,7 @@ export const updateConfig = async (config) => {
   });
 };
 
-export default {
+const api = {
   sendChatMessage,
   startRecording,
   stopRecording,
@@ -90,3 +90,5 @@ export default {
   getConfig,
   updateConfig,
 };
+
+export default api;

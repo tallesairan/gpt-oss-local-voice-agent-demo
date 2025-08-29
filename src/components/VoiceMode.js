@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mic, MicOff, Volume2, VolumeX, Settings } from 'lucide-react';
+import { Mic, MicOff, Volume2, Settings } from 'lucide-react';
 import { startRecording, stopRecording, getCurrentStatus } from '../services/api';
 
 const VoiceMode = ({ isConnected }) => {
@@ -10,7 +10,7 @@ const VoiceMode = ({ isConnected }) => {
   const [currentText, setCurrentText] = useState('');
   const [lastResponse, setLastResponse] = useState('');
   const [recordingDuration, setRecordingDuration] = useState(0);
-  const [isListening, setIsListening] = useState(true);
+  // Removido isListening pois não está sendo usado
   
   const intervalRef = useRef(null);
   const statusIntervalRef = useRef(null);

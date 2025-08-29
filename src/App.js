@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageCircle, Mic, MicOff, Settings } from 'lucide-react';
+import { MessageCircle, Mic, Settings } from 'lucide-react';
 import ChatInterface from './components/ChatInterface';
 import VoiceMode from './components/VoiceMode';
 import './App.css';
@@ -131,7 +131,7 @@ function App() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="text-center text-sm text-gray-500">
-            Powered by Ollama, Whisper & XTTS • {mode === 'chat' ? 'Text Modus' : 'Voice Modus'}
+            Powered by Custom OpenAI Server, Whisper & XTTS • {mode === 'chat' ? 'Modo Texto' : 'Modo Voz'}
           </div>
         </div>
       </motion.footer>

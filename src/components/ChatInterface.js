@@ -7,7 +7,7 @@ const ChatInterface = ({ isConnected }) => {
   const [messages, setMessages] = useState([
     {
       id: 1,
-      text: "Hallo! Ich bin dein lokaler Voice Assistant. Wie kann ich dir helfen?",
+      text: "Olá! Sou seu assistente de voz local. Como posso ajudá-lo?",
       sender: 'assistant',
       timestamp: new Date().toLocaleTimeString()
     }
@@ -54,7 +54,7 @@ const ChatInterface = ({ isConnected }) => {
     } catch (error) {
       const errorMessage = {
         id: Date.now() + 1,
-        text: "Entschuldigung, es gab ein Problem bei der Verarbeitung deiner Nachricht. Bitte versuche es erneut.",
+        text: "Desculpe, houve um problema ao processar sua mensagem. Por favor, tente novamente.",
         sender: 'assistant',
         timestamp: new Date().toLocaleTimeString(),
         isError: true

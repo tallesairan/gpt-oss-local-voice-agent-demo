@@ -64,7 +64,7 @@ def chat():
         message = data.get('message', '').strip()
         
         if not message:
-            return jsonify({'error': 'Keine Nachricht erhalten'}), 400
+            return jsonify({'error': 'Nenhuma mensagem recebida'}), 400
         
         # Get response from LLM
         response = ask_llm(message)
@@ -85,7 +85,7 @@ def start_voice_recording():
         state = get_state()
         
         if state['is_recording'] or state['is_processing']:
-            return jsonify({'error': 'Aufnahme bereits aktiv'}), 400
+            return jsonify({'error': 'Gravação já ativa'}), 400
         
         update_state(
             is_recording=True,
@@ -112,7 +112,7 @@ def start_voice_recording():
         threading.Thread(target=record_audio, daemon=True).start()
         
         return jsonify({
-            'message': 'Aufnahme gestartet',
+            'message': 'Gravação iniciada',
             'duration': RECORD_SECS
         })
         
@@ -127,7 +127,7 @@ def stop_voice_recording():
         state = get_state()
         
         if not state['is_recording'] and not state['audio_file']:
-            return jsonify({'error': 'Keine aktive Aufnahme'}), 400
+            return jsonify({'error': 'Nenhuma gravação ativa'}), 400
         
         update_state(
             is_recording=False,
@@ -142,7 +142,7 @@ def stop_voice_recording():
                 if not audio_file or not os.path.exists(audio_file):
                     update_state(
                         is_processing=False,
-                        error='Audio-Datei nicht gefunden'
+                        error='Arquivo de áudio não encontrado'
                     )
                     return
                 
@@ -159,7 +159,7 @@ def stop_voice_recording():
                 if not transcription.strip():
                     update_state(
                         is_processing=False,
-                        error='Keine Sprache erkannt'
+                        error='Nenhuma fala detectada'
                     )
                     return
                 
@@ -189,7 +189,7 @@ def stop_voice_recording():
         threading.Thread(target=process_audio, daemon=True).start()
         
         return jsonify({
-            'message': 'Verarbeitung gestartet'
+            'message': 'Processamento iniciado'
         })
         
     except Exception as e:
@@ -235,7 +235,7 @@ def cancel_voice_operation():
             error=None
         )
         
-        return jsonify({'message': 'Operation abgebrochen'})
+        return jsonify({'message': 'Operação cancelada'})
         
     except Exception as e:
         return jsonify({'error': str(e)}), 500
@@ -248,6 +248,6 @@ if __name__ == "__main__":
     print(f"📋 Health Check: http://localhost:{port}/health")
     print("\n💡 To start the React frontend, run:")
     print("   npm start")
-    print("\n⚠️  Make sure Ollama is running with the configured model!")
+    print("\n✅ Usando servidor personalizado: https://gpt-proxy.ahvideoscdn.net/v1")
     
     app.run(host="0.0.0.0", port=port, debug=True)
